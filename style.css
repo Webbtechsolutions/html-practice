@@ -7,6 +7,14 @@ html {
     background: rgb(243, 243, 210);
 }
 
+body {
+    margin: 0px;
+}
+header {
+    margin: 0px;
+    background: white;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -16,8 +24,9 @@ html {
     padding-right: 10px;
     padding-left: 10px;
     background-color: white;
-    margin: 0px;
-    border: solid rgb(135, 135, 82); box-shadow: rgb(154, 154, 103) 200px, 200px, 200px;
+    margin 0px;
+    border-bottom: 5px solid rgb(40, 40, 14); box-shadow: 0px 10px 50px black;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -26,7 +35,16 @@ html {
 
 .nav > ul > li {
     list-style-type: none;
+    font-weight: 800;
+    padding: 5px;
 
+}
+
+li:hover{
+    transition: 200ms;
+    background-color: blue;
+    color: white;
+    border: solid 2px black;
 }
 
 .nav > ul {
@@ -38,18 +56,41 @@ html {
 }
 
 .btn {
+    padding: 10px;
+    background: linear-gradient(to right, blue, rgb(84, 210, 84));
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid white;
+}
+.btn:hover{
+    transition: 300ms;
+    background: linear-gradient(to right, darkblue, darkgreen);
+    color: silver;
 }
 
 .hero {
-
+    background-color: gray;
+    background-image: url(https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-331625-933054.jpg&fm=jpg);
+    color: white;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 .hero-title {
-
+    font-size: 44px;
+    font-weight: 900;
+    padding-bottom: 0px;
 }
 
-.hero-para {
-
+.title-para {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    padding-top: 0px;
 }
 
 .information {
